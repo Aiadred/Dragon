@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\SearchEngine">
+      <UniqueIdentifier>{62f12fe9-4e46-4fec-a92b-5213fb89661c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SearchEngine\AlphaBeta">
+      <UniqueIdentifier>{6cd9925e-ff86-48ab-8036-497b406ffaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SearchEngine\MinMax">
+      <UniqueIdentifier>{b9a6c7ae-9322-46b3-a1a9-65d159bbdbf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SearchEngine\NegaMax">
+      <UniqueIdentifier>{ccbfc5e0-54c6-4ed3-bbd9-f94cc98773d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SearchEngine\Mine">
+      <UniqueIdentifier>{da82068b-74cd-486d-8902-c45e2bd3ab27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SearchEngine\PVS">
+      <UniqueIdentifier>{82787f3b-f663-412a-8f71-ba0386e5d098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Evalute">
+      <UniqueIdentifier>{d6f2469c-36e9-48a4-a339-7be2498afa16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL">
+      <UniqueIdentifier>{79181c5c-3431-454e-87ed-6f8a98e2dc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MoveGenerator">
+      <UniqueIdentifier>{952ec060-1f24-40ab-a171-7e32a2cf2ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\PublicCode">
+      <UniqueIdentifier>{39ac04db-a8e0-42b9-878d-c69d362ec1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MoveGenerator\MakeMove">
+      <UniqueIdentifier>{b9471702-6808-428f-b3a3-abc2da65e796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Trans_Table">
+      <UniqueIdentifier>{b2e9bd4b-4a10-406b-ab84-055d1a9f80e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\FactoryObj">
+      <UniqueIdentifier>{ee58dd4e-756a-4dbb-880f-1c3cb91911a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\Function">
+      <UniqueIdentifier>{efda747c-4db2-41f4-8e1c-af756b90ae78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\Function\Reset">
+      <UniqueIdentifier>{e2afad7a-9e29-46d5-919d-1188fa3f979a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\Function\Timer">
+      <UniqueIdentifier>{20aaad5a-d1a8-4af8-b855-8d3baf896027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\ShowInfo">
+      <UniqueIdentifier>{e50b5e77-8ee6-4f09-8d07-87df521c2826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GameCTRL\Function\SaveBoard">
+      <UniqueIdentifier>{80d09631-3a9a-4b1d-a99d-2b24835c18db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dragon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHead.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveBoard.h">
+      <Filter>源文件\GameCTRL\Function\SaveBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\ShowInfo\ShowInfo.h">
+      <Filter>源文件\GameCTRL\ShowInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicCode\Public.h">
+      <Filter>源文件\PublicCode</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicCode\PublicDefine.h">
+      <Filter>源文件\PublicCode</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\AlphaBeta\AlphaBeta.h">
+      <Filter>源文件\SearchEngine\AlphaBeta</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\Mine\Mine.h">
+      <Filter>源文件\SearchEngine\Mine</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\MinMax\MinMax.h">
+      <Filter>源文件\SearchEngine\MinMax</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\NegaMax\NegaMax.h">
+      <Filter>源文件\SearchEngine\NegaMax</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\PVS\PVS.h">
+      <Filter>源文件\SearchEngine\PVS</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchEngine\SearchEngine.h">
+      <Filter>源文件\SearchEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Trans_Table\Trans_Table.h">
+      <Filter>源文件\Trans_Table</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveGenerator\MoveGenerator.h">
+      <Filter>源文件\MoveGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveGenerator\MakeMove\MakeMove.h">
+      <Filter>源文件\MoveGenerator\MakeMove</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\GameCTRL.h">
+      <Filter>源文件\GameCTRL</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\Function\Function.h">
+      <Filter>源文件\GameCTRL\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\Function\Reset\Reset.h">
+      <Filter>源文件\GameCTRL\Function\Reset</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\Function\Timer\Timer.h">
+      <Filter>源文件\GameCTRL\Function\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCTRL\FactoryObj\FactoryObj.h">
+      <Filter>源文件\GameCTRL\FactoryObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Evalute\Evalute.h">
+      <Filter>源文件\Evalute</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dragon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Evalute\Evalute.cpp">
+      <Filter>源文件\Evalute</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\FactoryObj\FactoryObj.cpp">
+      <Filter>源文件\GameCTRL\FactoryObj</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\Function\SaveBoard\SaveBoard.cpp">
+      <Filter>源文件\GameCTRL\Function\SaveBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\Function\Reset\Reset.cpp">
+      <Filter>源文件\GameCTRL\Function\Reset</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\Function\Timer\Timer.cpp">
+      <Filter>源文件\GameCTRL\Function\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\Function\Function.cpp">
+      <Filter>源文件\GameCTRL\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\ShowInfo\ShowInfo.cpp">
+      <Filter>源文件\GameCTRL\ShowInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCTRL\GameCTRL.cpp">
+      <Filter>源文件\GameCTRL</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveGenerator\MakeMove\MakeMove.cpp">
+      <Filter>源文件\MoveGenerator\MakeMove</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveGenerator\MoveGenerator.cpp">
+      <Filter>源文件\MoveGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicCode\Public.cpp">
+      <Filter>源文件\PublicCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\AlphaBeta\AlphaBeta.cpp">
+      <Filter>源文件\SearchEngine\AlphaBeta</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\Mine\Mine.cpp">
+      <Filter>源文件\SearchEngine\Mine</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\MinMax\MinMax.cpp">
+      <Filter>源文件\SearchEngine\MinMax</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\NegaMax\NegaMax.cpp">
+      <Filter>源文件\SearchEngine\NegaMax</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\PVS\PVS.cpp">
+      <Filter>源文件\SearchEngine\PVS</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchEngine\SearchEngine.cpp">
+      <Filter>源文件\SearchEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Trans_Table\Trans_Table.cpp">
+      <Filter>源文件\Trans_Table</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dragon.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Dragon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

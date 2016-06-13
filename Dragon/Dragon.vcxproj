@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F802698-B5B1-43F5-9D0F-2DC0C4CA8872}</ProjectGuid>
+    <RootNamespace>Dragon</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+      <AdditionalIncludeDirectories>.\SearchEngine\PVS\;.\SearchEngine\Mine\;.\SearchEngine\NegaMax\;.\Trans_Table\;.\SearchEngine\AlphaBeta\;.\SearchEngine\MinMax\;.\SearchEngine\;.\PublicCode\;.\GameCTRL\ShowInfo\;.\MoveGenerator\MakeMove\;.\MoveGenerator\;.\GameCTRL\Function\Timer\;.\GameCTRL\FactoryObj\;.\GameCTRL\Function\SaveBoard\;.\GameCTRL\Function\Reset\;.\GameCTRL\Function\;.\GameCTRL\;.\Evalute\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dragon.h" />
+    <ClInclude Include="DragonDlg.h" />
+    <ClInclude Include="Evalute\Evalute.h" />
+    <ClInclude Include="GameCTRL\FactoryObj\FactoryObj.h" />
+    <ClInclude Include="GameCTRL\Function\Function.h" />
+    <ClInclude Include="GameCTRL\Function\Reset\Reset.h" />
+    <ClInclude Include="GameCTRL\Function\Timer\Timer.h" />
+    <ClInclude Include="GameCTRL\GameCTRL.h" />
+    <ClInclude Include="GameCTRL\ShowInfo\ShowInfo.h" />
+    <ClInclude Include="MoveGenerator\MakeMove\MakeMove.h" />
+    <ClInclude Include="MoveGenerator\MoveGenerator.h" />
+    <ClInclude Include="MyHead.h" />
+    <ClInclude Include="PublicCode\Public.h" />
+    <ClInclude Include="PublicCode\PublicDefine.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveBoard.h" />
+    <ClInclude Include="SearchEngine\AlphaBeta\AlphaBeta.h" />
+    <ClInclude Include="SearchEngine\Mine\Mine.h" />
+    <ClInclude Include="SearchEngine\MinMax\MinMax.h" />
+    <ClInclude Include="SearchEngine\NegaMax\NegaMax.h" />
+    <ClInclude Include="SearchEngine\PVS\PVS.h" />
+    <ClInclude Include="SearchEngine\SearchEngine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Trans_Table\Trans_Table.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dragon.cpp" />
+    <ClCompile Include="DragonDlg.cpp" />
+    <ClCompile Include="Evalute\Evalute.cpp" />
+    <ClCompile Include="GameCTRL\FactoryObj\FactoryObj.cpp" />
+    <ClCompile Include="GameCTRL\Function\Function.cpp" />
+    <ClCompile Include="GameCTRL\Function\Reset\Reset.cpp" />
+    <ClCompile Include="GameCTRL\Function\SaveBoard\SaveBoard.cpp" />
+    <ClCompile Include="GameCTRL\Function\Timer\Timer.cpp" />
+    <ClCompile Include="GameCTRL\GameCTRL.cpp" />
+    <ClCompile Include="GameCTRL\ShowInfo\ShowInfo.cpp" />
+    <ClCompile Include="MoveGenerator\MakeMove\MakeMove.cpp" />
+    <ClCompile Include="MoveGenerator\MoveGenerator.cpp" />
+    <ClCompile Include="PublicCode\Public.cpp" />
+    <ClCompile Include="SearchEngine\AlphaBeta\AlphaBeta.cpp" />
+    <ClCompile Include="SearchEngine\Mine\Mine.cpp" />
+    <ClCompile Include="SearchEngine\MinMax\MinMax.cpp" />
+    <ClCompile Include="SearchEngine\NegaMax\NegaMax.cpp" />
+    <ClCompile Include="SearchEngine\PVS\PVS.cpp" />
+    <ClCompile Include="SearchEngine\SearchEngine.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Trans_Table\Trans_Table.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dragon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Dragon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Dragon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
